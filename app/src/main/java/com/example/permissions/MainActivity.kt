@@ -31,7 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnPermissions.setOnClickListener {
            coarsePermission.runWithPermission {
-                toast("Granted")
+                //toast("Granted")
+               openAppSettings()
            }
         }
 
